@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../../customSlider/js/script.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <title>Search Panel</title>
+</head>
+<body>
+
+<section class="nav">
+    <i data-feather="search" id="searchIcon" class="search-icon"></i>
+</section>
+
+<section class="search-panel" id="searchPanel">
+
+    <div class="search-panel-content">
+        <div class="search-bar">
+            <input type="text" placeholder="Aradığınız ürün, kategori veya markayı yazınız...">
+            <button class="search-button">Ara</button>
+            <button id="closePanel" class="close-panel"><i data-feather="x"></i></button>
+        </div>
+
+        <div class="search-results">
+            <div class="line"></div>
+            <div class="cover">
+                <div class="categories">
+                    <h3>Öne Çıkanlar</h3>
+                    <ul>
+                        <li><a href="#">Moderna</a></li>
+                        <li><a href="#">Bone Luz</a></li>
+                        <li><a href="#">Yemek Takımı</a></li>
+                        <li><a href="#">Angelıca</a></li>
+                        <li><a href="#">Zeugma</a></li>
+                    </ul>
+                </div>
+                <div class="swiper-container">
+                    <h3>Sizin için Seçtiklerimiz</h3>
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <!--swiper itemleri buraya eklenecek -->
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<script>feather.replace();</script>
+
+</body>
+<script src="../js/script.js"></script>
+</html>
