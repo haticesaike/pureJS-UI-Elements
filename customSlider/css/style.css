@@ -1,4 +1,177 @@
-.swiper {
-    width: 100%;
-    height: 300px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    gap: 2rem;
+    padding-left: 5rem;
+    padding-right: 2rem;
+    background-color: #f3f2f5;
+}
+
+.left {
+    width: 30%;
+    flex: 2;
+    background-color: white;
+    height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 2rem;
+    padding-left: 2rem;
+    flex-direction: column;
+}
+
+.left h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #717070;
+}
+
+.left span {
+    font-size: 2rem;
+    color: #58a9bc;
+}
+
+@media (max-width: 600px) {
+    .left {
+        display: none;
+    }
+}
+
+
+.line {
+    width: 20%;
+    height: 0.1rem;
+    margin-top: 1rem;
+    background-color: #58a9bc;
+}
+
+.right {
+    width: 75%;
+    flex: 2;
+}
+
+.swiper {
+    height: 35rem;
+}
+
+.swiper-slide {
+    background-color: white;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 50%;
+    color: #717070;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: 1.2rem;
+}
+
+.image {
+    display: flex;
+    height: 75%;
+}
+
+.details {
+    display: flex;
+    width: 100%;
+    padding: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title {
+    font-size: 1.1rem;
+    color: #717070;
+    padding: 0.5rem;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    padding: 0.5rem;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.discount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #d65e58;
+    padding: 0.5rem;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-weight: bold;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.discount p {
+    margin: 0;
+    line-height: 1rem;
+}
+
+.oldPrice {
+    text-decoration: line-through;
+    color: #717070;
+    font-size: 1rem;
+}
+
+.price {
+    color: #595757;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.addBasketButton {
+    width: 100%;
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+.addBasketButton button {
+    width: 100%;
+    background-color: white;
+    font-size: 1.2rem;
+    border: 1px solid #595757;
+    color: #595757;
+    padding: 0.5rem;
+
+    cursor: pointer;
+}
+
+.details:hover .content {
+    display: none;
+
+}
+
+.details:hover .addBasketButton {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    padding-top: 1rem;
+}
+
+
+
