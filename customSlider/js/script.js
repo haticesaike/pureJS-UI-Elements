@@ -89,8 +89,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         <p class="title">${product.title}</p>
                         <div class="content">
                             <div class="discount">
-                                <p style="font-size: 1.2rem">%${product.discount}</p>
-                                <p>indirim</p>
+                                <p class="discountValue">%${product.discount}</p>
+                                <p class="discountText">indirim</p>
                             </div>
                             <div>
                                 <div class="oldPrice">${product.oldPrice}</div>
